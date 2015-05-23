@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "https://github.com/", true);
+            
+            xhr.onreadystatechange=function()
+            {
+                if (xhr.readyState==4)
+                {
+                    alert(xhr.responseText);
+                }
+            }
+        
+            xhr.send();
+        </script>
+    </head>
+</html>
